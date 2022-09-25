@@ -2,6 +2,7 @@ from php5random.php5random import Php5Random
 
 
 def test_zero_seed() -> None:
+    # The first 100 random numbers generated with seed 0 are all 0
     rng = Php5Random(0)
 
     arr: list[int] = [rng.rand() for _ in range(100)]
@@ -9,6 +10,7 @@ def test_zero_seed() -> None:
 
 
 def test_one_seed() -> None:
+    # The first 100 random numbers generated with seed 1 are expected to be these values
     rng = Php5Random(1)
     arr: list[int] = [rng.rand() for _ in range(100)]
 
