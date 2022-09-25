@@ -1,0 +1,13 @@
+from typing_extensions import Self
+
+
+class Php5Random:
+    
+    def __new__(cls, seed: int) -> Self: ...
+
+    def srand(self, seed: int) -> None: ...
+    
+    def rand(self) -> int: ...
+    
+    def rand_range(self, min: int, max: int) -> int: ...
+

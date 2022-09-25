@@ -1,0 +1,17 @@
+[package]
+name = "php5random"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "php5random"
+crate_type = ["cdylib", "rlib"]
+
+[dependencies.pyo3]
+version = "0.17.1"
+features = ["extension-module"]
+
+[profile.release]
+lto = "fat"
+codegen-units = 1
+opt-level = 3
