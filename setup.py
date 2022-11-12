@@ -23,6 +23,10 @@ packages = [
     "php5random",
 ]
 
+package_data = {
+    "php5random": ["py.typed", "php5random.pyi"],
+}
+
 if version.endswith(("a", "b", "rc")):
     # append version identifier based on commit count
     with contextlib.suppress(Exception):
@@ -55,6 +59,7 @@ setup(
     url="https://github.com/diceroll123/php5random.py",
     version=version,
     packages=packages,
+    package_data=package_data,
     rust_extensions=[RustExtension("php5random.php5random", binding=Binding.PyO3)],
     python_requires=">=3.8.0",
     classifiers=[
@@ -66,4 +71,5 @@ setup(
         "Typing :: Typed",
     ],
     zip_safe=False,
+    include_package_data=True,
 )
