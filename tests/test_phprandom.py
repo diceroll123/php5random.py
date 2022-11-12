@@ -1,4 +1,4 @@
-from php5random.php5random import Php5Random
+from php5random import Php5Random
 
 
 def test_zero_seed() -> None:
