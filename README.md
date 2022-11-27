@@ -10,6 +10,8 @@ I needed an implementation of the `rand` and `srand` functionality you'd find in
 - the values aren't consistent cross-platform
 - it's not thread-safe
 
+...and this solves that *blazingly fast!*
+
 ---
 
 *PRs welcome!*
