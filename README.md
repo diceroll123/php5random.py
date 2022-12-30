@@ -24,6 +24,16 @@ I needed an implementation of the `rand` and `srand` functionality you'd find in
 
 ...and this solves that *blazingly fast!*
 
+## Benchmarks
+
+In the `bench` folder you'll find two files. `python.py`, and `rust.py`. After running them on my 8-core 2.4GHz Intel Mac from 2019, I get the following (rounded to 3 decimals):
+
+- `python.py`: `1.221s`
+- `rust.py`: `0.410s`
+
+Making Rust nearly 3x faster!
+
+
 ---
 
 *PRs welcome!*
