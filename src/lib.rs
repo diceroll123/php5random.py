@@ -1,7 +1,7 @@
 use pyo3::prelude::*;
 
 #[pyclass]
-struct Php5Random {
+pub struct Php5Random {
     r: Vec<u32>,
     k: usize,
 }
